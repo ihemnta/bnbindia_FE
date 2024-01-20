@@ -25,17 +25,17 @@ const NavigationContactInfo = () => {
       <div className="sm:flex hidden gap-4 mt-6 text-sm">
         <div className="flex  gap-1  items-center">
           <IconWrapper
-            width={30}
-            height={30}
+            width={25}
+            height={25}
             iconPath="/assets/svgs/mail.svg"
           />
           <span className="text-xs">Email: </span>
           <span className="font-verdana">bhupeshbhaskar21@gmail.com</span>
         </div>
-        <div className="flex gap-1  items-center">
+        <div className="flex gap-1 mr-4 items-center">
           <IconWrapper
-            width={30}
-            height={30}
+            width={25}
+            height={25}
             iconPath="/assets/svgs/phone.svg"
           />
           <span className="text-xs"> Call Us: </span>
