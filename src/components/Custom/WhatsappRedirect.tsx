@@ -1,4 +1,3 @@
-// FloatingWhatsAppIcon.js
 import React, { useState } from "react";
 import IconWrapper from "../Wrapper/IconWrapper";
 import ChatComponent from "../Chat/Chat";
