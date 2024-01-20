@@ -1,6 +1,7 @@
-import React, { ReactNode, useEffect, useRef } from "react";
+import React, { ReactNode } from "react";
 import NavigationBar from "../Navbar/NavigationBar";
 import NavigationContactInfo from "../Navbar/NavigationContactInfo";
+import WhatsappRedirect from "../Custom/WhatsappRedirect";
 
 interface LayoutProps {
   children: ReactNode;
@@ -20,6 +21,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </div>
       </div>
       {children}
+      <WhatsappRedirect />
     </section>
   );
 };
