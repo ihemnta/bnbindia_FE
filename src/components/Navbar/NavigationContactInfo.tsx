@@ -3,7 +3,7 @@ import IconWrapper from "../Wrapper/IconWrapper";
 
 const NavigationContactInfo = () => {
   return (
-    <div className="flex justify-center sm:justify-between border-b border-gray-300 ">
+    <div className="flex justify-center sm:justify-between sm:border-b border-gray-300 ">
       <div className="flex gap-7 -ml-3 items-center">
         <div className="flex flex-col sm:flex-row sm:gap-3 items-center  justify-center w-full">
           <img

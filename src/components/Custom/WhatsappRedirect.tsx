@@ -7,8 +7,6 @@ const WhatsappRedirect = () => {
   const isMobileDevice = useIsMobile();
   const [showChatComponent, setShowChatComponent] = useState(false);
 
-  console.log("is mobile device", isMobileDevice);
-
   const redirectToWhatsApp = () => {
     const phoneNumber = "09811001353";
 
