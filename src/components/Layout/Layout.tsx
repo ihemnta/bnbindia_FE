@@ -27,9 +27,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <section>
       {/* <CustomCursor /> */}
-      <div className="relative flex flex-col bg-cover bg-center">
-        <div className="absolute inset-0  bg-gradient-to-b from-gray-400 to-gray-200  sm:from-gray-400 sm:to-transparent  h-22 sm:h-32"></div>
-        <div className="relative z-10">
+      <div className="w-full  fixed z-30 flex flex-col bg-cover bg-center">
+        <div className="absolute inset-0  backdrop-blur-sm bg-gradient-to-b from-gray-500 to-transparent  sm:from-gray-800 sm:to-transparent  h-22 sm:h-26"></div>
+        <div className="relative flex flex-col gap-2 z-10">
           <NavigationContactInfo />
           {!isMobileDevice ? <NavigationBar /> : null}
           <button

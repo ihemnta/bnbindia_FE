@@ -3,7 +3,7 @@ import IconWrapper from "../Wrapper/IconWrapper";
 
 const NavigationContactInfo = () => {
   return (
-    <div className="flex justify-center sm:justify-between sm:border-b border-gray-300 ">
+    <div className="flex text-white justify-center sm:justify-between sm:border-b border-gray-300 ">
       <div className="flex gap-7 -ml-3 items-center">
         <div className="flex flex-col sm:flex-row sm:gap-3 items-center  justify-center w-full">
           <img
@@ -32,7 +32,7 @@ const NavigationContactInfo = () => {
           <span className="text-xs">Email: </span>
           <span className="font-verdana">bhupeshbhaskar21@gmail.com</span>
         </div>
-        <div className="flex gap-1 mr-4 items-center">
+        <div className="flex gap-1 mr-4  items-center">
           <IconWrapper
             width={25}
             height={25}

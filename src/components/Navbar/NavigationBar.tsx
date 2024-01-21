@@ -15,7 +15,7 @@ const NavigationBar: React.FC<INavigationBarProps> = ({
     <nav
       className={`flex ${
         isMobileNavOpen ? "flex-col mt-6" : "flex-row"
-      } tracking-wider font-light justify-evenly items-center`}
+      } tracking-wider text-lg font-light justify-evenly items-center`}
     >
       {navLinks?.map((link, index) => (
         <Link
@@ -24,8 +24,8 @@ const NavigationBar: React.FC<INavigationBarProps> = ({
           onClick={() => onNavClick?.()}
           className={`${
             isMobileNavOpen
-              ? "block w-full font-semibold text-gray-700 text-center py-3"
-              : "hover:font-semibold"
+              ? "block w-full font-semibold text-white hover:shadow-lg text-center py-3"
+              : "hover:font-semibold text-white"
           }`}
         >
           {link?.text}

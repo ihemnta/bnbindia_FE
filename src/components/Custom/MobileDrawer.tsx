@@ -21,14 +21,10 @@ const MobileDrawer: React.FC<MobileDrawerProps> = ({ children }) => {
   return (
     <animated.div
       ref={drawerRef}
+      className={"backdrop-blur-sm fixed bg-transparent w-full h-full z-50"}
       style={{
-        position: "fixed",
         top: 86,
         left: 0,
-        width: "100%",
-        zIndex: 20,
-        height: "100%",
-        background: "#E5E7EB",
         ...springs,
       }}
     >
