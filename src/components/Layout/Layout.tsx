@@ -28,7 +28,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <section>
       {/* <CustomCursor /> */}
       <div className="relative flex flex-col bg-cover bg-center">
-        <div className="absolute inset-0  bg-gradient-to-b from-gray-400 to-gray-200  sm:from-gray-400 sm:to-transparent  h-24 sm:h-32"></div>
+        <div className="absolute inset-0  bg-gradient-to-b from-gray-400 to-gray-200  sm:from-gray-400 sm:to-transparent  h-22 sm:h-32"></div>
         <div className="relative z-10">
           <NavigationContactInfo />
           {!isMobileDevice ? <NavigationBar /> : null}

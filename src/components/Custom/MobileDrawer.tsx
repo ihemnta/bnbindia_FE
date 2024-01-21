@@ -23,7 +23,7 @@ const MobileDrawer: React.FC<MobileDrawerProps> = ({ children }) => {
       ref={drawerRef}
       style={{
         position: "fixed",
-        top: 90,
+        top: 86,
         left: 0,
         width: "100%",
         zIndex: 20,
