@@ -1,5 +1,5 @@
 import React from "react";
-import { useSpring, animated } from "react-spring";
+import { useSpring, animated } from "@react-spring/web";
 
 interface ICTAButtonProps {
   buttonText: string;
@@ -8,7 +8,7 @@ interface ICTAButtonProps {
 
 const CTAButton: React.FC<ICTAButtonProps> = ({
   buttonText,
-  btnColor = "amber",
+  btnColor = "#c4a766",
 }) => {
   const [isHovered, setHovered] = React.useState(false);
 
@@ -16,10 +16,13 @@ const CTAButton: React.FC<ICTAButtonProps> = ({
     height: isHovered ? "100%" : "0%",
     config: { tension: 190, friction: 20 },
   });
-
+console.log(
+  "btn color",btnColor
+)
   return (
     <div
-      className={`relative backdrop-blur-sm inline-block text-${btnColor}-400 uppercase py-1 font-semibold border-2 border-${btnColor}-400 px-6 rounded-sm overflow-hidden`}
+    style={{border:`2px solid ${btnColor}`,color:btnColor}}
+      className={`relative backdrop-blur-sm inline-block uppercase py-1 font-semibold  px-6 rounded-sm overflow-hidden`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -33,7 +36,7 @@ const CTAButton: React.FC<ICTAButtonProps> = ({
       <animated.span
         className="relative z-10"
         style={{
-          color: isHovered ? "white" : "currentColor",
+          color: isHovered ? btnColor==="white"? "black": "white" : "currentColor",
         }}
       >
         {buttonText}

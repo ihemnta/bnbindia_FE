@@ -44,11 +44,11 @@ const LandingScreen = () => {
 
         <div className="absolute top-[52%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-center text-gray-900 flex flex-col items-center justify-center">
           <div className="sm:text-4xl   flex flex-col justify-center items-center  text-2xl text-center">
-            <span className="w-52 sm:w-full font-serif  m-auto block tracking-wider">
+            <span className="w-52 sm:w-full font-sans  m-auto block tracking-wider">
               Handmade for your
             </span>
             <animated.span
-              className="font-extrabold sm:text-6xl text-4xl tracking-widest text-white block mt-2 w-max"
+              className="font-bold sm:text-6xl text-4xl tracking-widest text-white block mt-2 w-max"
               style={{
                 fontFamily: "Georgia, serif",
                 ...springProps,
@@ -62,16 +62,7 @@ const LandingScreen = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2">
-        <div>
-          <img
-            className="h-screen w-screen object-cover"
-            src="/assets/projects/landing-furniture.jpg"
-            alt="living-room"
-          />
-        </div>
-        <div></div>
-      </div>
+     
     </div>
   );
 };
