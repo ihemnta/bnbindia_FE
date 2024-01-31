@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "./nav.config";
+import IconWrapper from "../Wrapper/IconWrapper";
 
 interface INavigationBarProps {
   isMobileNavOpen?: boolean;
@@ -31,6 +32,11 @@ const NavigationBar: React.FC<INavigationBarProps> = ({
           {link?.text}
         </Link>
       ))}
+      {isMobileNavOpen?<div className='flex gap-6 mt-7'>
+        <IconWrapper iconPath="/assets/svgs/pinterest.svg" />
+          <IconWrapper iconPath="/assets/svgs/instagram.svg" />
+          <IconWrapper iconPath="/assets/svgs/facebook.svg" />
+          </div> :null}
     </nav>
   );
 };

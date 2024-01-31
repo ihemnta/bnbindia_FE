@@ -49,7 +49,7 @@ const Footer: React.FC<IFooterProps> = ({ showAnimation }) => {
 
 
           </div>
-          <div className='grid grid-cols-3 w-full'>
+          <div className='sm:grid sm:grid-cols-3 space-y-4 sm:space-y-0 w-full'>
 
         
 
