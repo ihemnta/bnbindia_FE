@@ -44,13 +44,13 @@ const LandingScreen = () => {
 
         <div className="absolute top-[52%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-center text-gray-900 flex flex-col items-center justify-center">
           <div className="sm:text-4xl   flex flex-col justify-center items-center  text-2xl text-center">
-            <span className="w-52 sm:w-full font-sans  m-auto block tracking-wider">
+            <span  style={{fontFamily:"custom-cursive-font"}} className="w-52 sm:w-full   m-auto block tracking-wider">
               Handmade for your
             </span>
             <animated.span
               className="font-bold sm:text-6xl text-4xl tracking-widest text-white block mt-2 w-max"
               style={{
-                fontFamily: "Georgia, serif",
+                fontFamily: "junicode-bold",
                 ...springProps,
               }}
             >

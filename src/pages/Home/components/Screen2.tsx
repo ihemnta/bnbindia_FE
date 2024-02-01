@@ -1,8 +1,5 @@
-// Screen2.js
 import React from 'react';
 import CTAButton from '../../../components/Custom/CTAButton';
-import { useSpring, animated } from '@react-spring/web';
-import useScrollVisibility from '../../../components/hooks/useScrollVisibility';
 
 const Screen2: React.FC = () => {
 
@@ -11,13 +8,13 @@ const Screen2: React.FC = () => {
       {/* Image 1 */}
       <div className="relative">
         <img
-          className=" h-screen w-screen object-fill"
+          className=" h-screen w-screen  object-cover sm:object-fill"
           src="/assets/projects/kitchen-interior.jpg"
           alt="kitchen-interior"
         />
         <div className="absolute inset-0 flex justify-center items-center">
           <div className="text-center space-y-1 text-white">
-            <p className="text-2xl text-black font-semibold font-sans tracking-wider">Crafting Culinary Spaces</p>
+            <p style={{fontFamily:"junicode-regular"}} className="text-2xl text-black font-semibold tracking-wider">Crafting Culinary Spaces</p>
             <CTAButton btnColor='white' buttonText="Modular Kitchen" />
           </div>
         </div>
@@ -26,13 +23,13 @@ const Screen2: React.FC = () => {
       {/* Image 2 */}
       <div className="relative">
         <img
-          className=" h-screen w-screen object-fill"
+          className=" h-screen w-screen   object-cover sm:object-fill"
           src="/assets/projects/landing-furniture.jpg"
           alt="furniture-landing"
         />
         <div className="absolute inset-0 flex justify-center items-center ">
           <div className="text-center space-y-1 text-white font-semibold">
-            <p className="text-2xl font-semibold font-sans tracking-wider">Furnishing Dreams, Uniquely Yours</p>
+            <p style={{fontFamily:"junicode-regular"}} className="text-2xl font-semibold  tracking-wider">Furnishing Dreams, Uniquely Yours</p>
             <CTAButton btnColor='#301200' buttonText="Bespoke Furniture" />
           </div>
         </div>

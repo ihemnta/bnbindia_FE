@@ -1,19 +1,16 @@
-import React, { useRef } from "react";
+import React from "react";
 import LandingScreen from "./components/LandingScreen";
 import Screen2 from "./components/Screen2";
-import useScrollVisibility from "../../components/hooks/useScrollVisibility";
 import VerticalCarousel from "../../components/Caraousel/VerticalCaraousel";
+import { sliderImages } from "./components/home.config";
 
 
 const HomePage = () => {
-
   return (
     <div className="flex flex-col h-full">
       <LandingScreen />
-
       <Screen2 />
-      {/* <VerticalCarousel buttonLink="/"  buttonText="View more" images={["/assets/projects/kitchen-interior.jpg","/assets/projects/landing.jpg"]}/> */}
-
+      <VerticalCarousel items={sliderImages} />
     </div>
   );
 };

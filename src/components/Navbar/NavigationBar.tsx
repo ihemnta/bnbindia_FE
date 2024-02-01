@@ -21,6 +21,7 @@ const NavigationBar: React.FC<INavigationBarProps> = ({
       {navLinks?.map((link, index) => (
         <Link
           key={index}
+          style={{fontFamily:"junicode-regular"}}
           to={link?.to}
           onClick={() => onNavClick?.()}
           className={`${

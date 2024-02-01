@@ -34,7 +34,7 @@ const WhatsappRedirect = () => {
 
   return (
     <div>
-      <animated.div style={iconAnimation} className="fixed bottom-8 right-8">
+      <animated.div style={iconAnimation} className="fixed z-50 bottom-8 right-8">
         <div
           className="cursor-pointer transform transition-transform duration-200 hover:scale-110 bg-black text-white rounded-full p-3"
           onClick={redirectToWhatsApp}
