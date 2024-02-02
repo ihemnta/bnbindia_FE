@@ -10,7 +10,7 @@ interface IFooterProps {
   showAnimation: boolean;
 }
 
-const Footer: React.FC<IFooterProps> = ({ showAnimation }) => {
+const Footer: React.FC<IFooterProps> = ({ showAnimation=true }) => {
   const logoAnimation = useSpring({
     transform: showAnimation ? 'scale(0.7)' : 'scale(1)',
     config: { tension: 100, friction: 15 },

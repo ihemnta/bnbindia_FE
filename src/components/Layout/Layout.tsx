@@ -1,4 +1,4 @@
-import React, { ReactNode, useState, useEffect } from "react";
+import React, { ReactNode, useState } from "react";
 import { animated, useSpring } from "@react-spring/web";
 
 import NavigationBar from "../Navbar/NavigationBar";
@@ -37,7 +37,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <section className="flex flex-col relative h-full min-h-screen">
       {/* <CustomCursor /> */}
       <animated.div style={headerSpring} className="w-full h-max  fixed z-30 flex flex-col bg-cover bg-center">
-        <div className=" absolute inset-0  backdrop-blur-sm bg-gradient-to-b from-gray-500 to-transparent  sm:from-gray-800 sm:to-transparent  h-22 sm:h-26"></div>
+      <div  className="absolute inset-0  bg-gradient-to-tl backdrop-blur-sm  from-black to-transparent sm:from-gray-900/60 sm:to-transparent h-22 sm:h-26"></div>
+
         <div className="flex flex-col gap-2 z-10">
           <NavigationContactInfo />
           {!isMobileDevice && (
