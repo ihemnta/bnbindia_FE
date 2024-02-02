@@ -1,5 +1,6 @@
 import React from "react";
 import IconWrapper from "../Wrapper/IconWrapper";
+import SocialMediaIcons from "../Layout/SocialMediaIcons";
 
 const NavigationContactInfo = () => {
   return (
@@ -18,11 +19,7 @@ const NavigationContactInfo = () => {
 
        
       </div>
-      <div className=" hidden sm:flex gap-3 mr-3 mt-6">
-          <IconWrapper iconPath="/assets/svgs/pinterest.svg" />
-          <IconWrapper iconPath="/assets/svgs/instagram.svg" />
-          <IconWrapper iconPath="/assets/svgs/facebook.svg" />
-        </div>
+      <SocialMediaIcons/>
       {/* <div className="sm:flex hidden gap-4 mt-6 text-sm">
         <div className="flex  gap-1  items-center">
           <IconWrapper

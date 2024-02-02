@@ -3,10 +3,8 @@
 import React from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import RedirectList from './RedirectList';
-import IconWrapper from '../Wrapper/IconWrapper';
-import CustomInput from '../Custom/CustomInput';
-import SubscribeNewsletter from './NewsLetter';
 import { footerConfig } from './footer.config';
+import SocialMediaIcons from '../Layout/SocialMediaIcons';
 
 interface IFooterProps {
   showAnimation: boolean;
@@ -62,11 +60,7 @@ const Footer: React.FC<IFooterProps> = ({ showAnimation }) => {
       </animated.div>
       
 <div className="flex justify-center  border p-2 gap-6 border-gray-600 rounded-md ">
-        <div className='flex gap-6'>
-        <IconWrapper iconPath="/assets/svgs/pinterest.svg" />
-          <IconWrapper iconPath="/assets/svgs/instagram.svg" />
-          <IconWrapper iconPath="/assets/svgs/facebook.svg" />
-          </div> 
+      <SocialMediaIcons fromFooter/>
           {/* <SubscribeNewsletter/> */}
         </div>
       

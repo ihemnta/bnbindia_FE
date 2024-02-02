@@ -5,6 +5,7 @@ interface IconWrapperProps {
   width?: string | number;
   height?: string | number;
   children?: ReactNode;
+  onClick?:()=>void
 }
 
 const IconWrapper: React.FC<IconWrapperProps> = ({
@@ -12,6 +13,7 @@ const IconWrapper: React.FC<IconWrapperProps> = ({
   width,
   height,
   children,
+  onClick
 }) => {
   const iconStyle: CSSProperties = {
     width: width ?? 30,
@@ -19,7 +21,7 @@ const IconWrapper: React.FC<IconWrapperProps> = ({
   };
 
   return (
-    <div className="hover:-translate-y-0.5 " style={iconStyle}>
+    <div onClick={onClick} className="hover:-translate-y-0.5 " style={iconStyle}>
       {iconPath ? <img src={iconPath} alt="icon" /> : children}
     </div>
   );

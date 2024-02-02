@@ -17,7 +17,7 @@ const VerticalCarousel: React.FC<VerticalCarouselProps> = ({ items }) => {
   const handleScroll = (event: React.WheelEvent<HTMLDivElement>) => {
     // Increment or decrement index based on scrolling direction with wrap-around
     event.preventDefault()
-    document.body.style.overflow = 'hidden';
+ 
 
     if (event.deltaY > 0) {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
@@ -25,9 +25,6 @@ const VerticalCarousel: React.FC<VerticalCarouselProps> = ({ items }) => {
       setCurrentIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
     }
     
-    if(currentIndex+1===items?.length || currentIndex===0)
-      // Enable body scrolling when the last image or first image
-      document.body.style.overflow = 'auto';
 
       
   };
