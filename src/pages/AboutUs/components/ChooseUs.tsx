@@ -5,9 +5,9 @@ const ChooseUs = () => {
   return (
     <div className="relative w-full sm:h-screen h-[180vh] border border-gray-100 shadow-lg p-4">
       {/* Content on top of the image */}
-      <div className="absolute sm:top-1/3 top-[10%] left-14 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 text-center">
+      <div className="absolute sm:top-1/3 top-[8%] left-[27%]  sm:left-1/2 transform sm:-translate-x-1/2 sm:-translate-y-1/2 text-center">
         <span
-          className="text-4xl font-bold text-white"
+          className="sm:text-4xl text-xl font-bold text-white"
           style={{ fontFamily: 'junicode-bold' }}
         >
           WHY CHOOSE US

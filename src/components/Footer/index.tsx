@@ -24,7 +24,7 @@ const Footer: React.FC<IFooterProps> = ({ showAnimation = true }) => {
   });
 
   return (
-    <footer className="flex flex-col gap-5 relative bg-gradient-to-r from-black via-gray-800 to-gray-700 text-white p-10 h-max">
+    <footer className="flex flex-col w-screen gap-5 relative bg-gradient-to-r from-black via-gray-800 to-gray-700 text-white p-10 h-max">
       <animated.div style={firstDivAnimation}>
         <div className="space-y-7 ">
           <div className="-ml-6 -mt-6 rounded shadow-sm">

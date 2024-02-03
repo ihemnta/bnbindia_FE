@@ -1,6 +1,7 @@
 // CustomCursor.tsx
 import React, { useEffect, useState } from 'react';
 import { animated } from '@react-spring/web';
+import "./cursor.css"
 
 const CustomCursor: React.FC = () => {
   const [trail, setTrail] = useState<Array<{ x: number; y: number }>>([]);

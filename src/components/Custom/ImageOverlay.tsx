@@ -26,7 +26,7 @@ const ImageOverlayComponent: React.FC<ImageOverlayProps> = ({ backgroundImage, l
             style={{ ...backgroundImageStyle }}
           >
             {project.value}
-            <div className='text-lg '>
+            <div className='sm:text-lg text-sm text-center '>
               {project.label}
             </div>
           </div>

@@ -37,7 +37,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <section className="flex flex-col relative h-full min-h-screen">
-      <CustomCursor />
+   {!isMobileDevice ?  <CustomCursor />:null}  
       
       <animated.div style={headerSpring} className="w-full h-max  fixed z-30 flex flex-col bg-cover bg-center">
       <div  className="absolute inset-0  bg-gradient-to-tl backdrop-blur-sm  from-black to-transparent sm:from-gray-900/60 sm:to-transparent h-22 sm:h-26"></div>
