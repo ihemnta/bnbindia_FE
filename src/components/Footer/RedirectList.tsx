@@ -23,7 +23,7 @@ const RedirectList: React.FC<IRedirectListProps> = ({ content, header }) => {
   return (
     <div className='space-y-6 flex flex-col justify-start'>
       <span className='uppercase tracking-wider text-md sm:no-underline underline'>{header}</span>
-      <div className='flex flex-col text-sm gap-3 text-gray-300 h-full'>
+      <div className='flex flex-col w-max text-sm gap-3 text-gray-300 h-full'>
         {content?.map((item) => (
           <div
             className='hover:text-gray-50 flex gap-2 hover:underline hover:shadow-sm'

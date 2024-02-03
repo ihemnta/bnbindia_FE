@@ -2,19 +2,10 @@ import React from 'react';
 import VectorCard from './VectorCard';
 
 const ChooseUs = () => {
- 
   return (
-    <div className="w-full h-[30vw] sm:h-screen border border-gray-100 shadow-lg p-4 ">
+    <div className="relative w-full sm:h-screen h-[180vh] border border-gray-100 shadow-lg p-4">
       {/* Content on top of the image */}
-     
-<div className='relative'>
-
-      {/* Image */}
-      <img alt='interior' className='h-[30vw] w-screen object-cover' src='/assets/projects/about-us-3rd-image.jpg'/>
-<div className='absolute top-[25%] w-full'>
-
-
-      <div className=" flex flex-col h-full justify-center items-center">
+      <div className="absolute sm:top-1/3 top-[10%] left-14 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 text-center">
         <span
           className="text-4xl font-bold text-white"
           style={{ fontFamily: 'junicode-bold' }}
@@ -22,8 +13,16 @@ const ChooseUs = () => {
           WHY CHOOSE US
         </span>
       </div>
-      {/* Content Section */}
-      <div className="grid h-full w-full sm:grid-cols-3 justify-between ml-3 ">
+
+      {/* Image */}
+      <img
+        alt="interior"
+        className="w-full sm:h-[30vw] h-max rounded-xl object-cover"
+        src="/assets/projects/about-us-3rd-image.jpg"
+      />
+
+      <div className="sm:w-full absolute sm:top-[70%] top-[15%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 grid sm:grid-cols-3 grid-cols-1 justify-center gap-4">
+        {/* Content Section */}
         <VectorCard
           title="Quality"
           description=" As interior designers, the one thing that continues to resonate throughout our business is quality. From the moment you begin to discuss the project, right through to completion, we aim to uphold the highest standards possible and ensure that our clients are left with not only a great interior but a pleasant experience."
@@ -39,10 +38,7 @@ const ChooseUs = () => {
           description="We pay incredible attention to detail, selecting only the materials, furniture, and lighting that is perfect for the interior design job as a whole. And where we can’t find the perfect furniture, we can design and make bespoke furniture ourselves to deliver the perfect end result every time."
           image="/assets/svgs/attention.svg"
         />
-      </div>
-        
-</div>
-      {/* End Content Section */}
+        {/* End Content Section */}
       </div>
     </div>
   );

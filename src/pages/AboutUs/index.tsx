@@ -36,7 +36,7 @@ const AboutUs = () => {
           style={{ height: isMobile ? '70vh' : '40vw' }}
           className=" w-screen object-cover"
           src="/assets/projects/about-us-page-main.jpg"
-          alt="About Us Image"
+          alt="About Us"
         />
         <div
           style={{ backdropFilter: 'blur(3px)' }}
