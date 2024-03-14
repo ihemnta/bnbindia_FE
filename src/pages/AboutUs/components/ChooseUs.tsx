@@ -3,7 +3,7 @@ import VectorCard from './VectorCard';
 
 const ChooseUs = () => {
   return (
-    <div className="relative w-full sm:h-screen h-[180vh] border border-gray-100 shadow-lg p-4">
+    <div className="relative w-full sm:h-screen h-full  border border-gray-100 shadow-lg p-4">
       {/* Content on top of the image */}
       <div className="absolute sm:top-1/3 top-[8%] left-[27%]  sm:left-1/2 transform sm:-translate-x-1/2 sm:-translate-y-1/2 text-center">
         <span
@@ -21,7 +21,7 @@ const ChooseUs = () => {
         src="/assets/projects/about-us-3rd-image.jpg"
       />
 
-      <div className="sm:w-full absolute sm:top-[70%] top-[15%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 grid sm:grid-cols-3 grid-cols-1 justify-center gap-4">
+      <div className="sm:w-full sm:absolute sm:top-[70%] top-[15%] sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 grid sm:grid-cols-3 grid-cols-1 justify-center gap-4">
         {/* Content Section */}
         <VectorCard
           title="Quality"

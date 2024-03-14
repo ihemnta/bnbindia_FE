@@ -3,6 +3,8 @@ import { useSpring, animated } from '@react-spring/web';
 import useIsMobile from '../../components/hooks/useIsMobile';
 import ImageOverlayComponent from '../../components/Custom/ImageOverlay';
 import ChooseUs from './components/ChooseUs';
+import Testimonials from './components/AmentiesSection';
+import ProjectView from './components/ProjectView';
 
 const AboutUs = () => {
   const isMobile = useIsMobile();
@@ -97,6 +99,8 @@ const AboutUs = () => {
         </animated.div>
       </div>
        <ChooseUs/>
+       <ProjectView/>
+       <Testimonials/>
     </div>
   );
 };
