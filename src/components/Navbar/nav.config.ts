@@ -1,19 +1,19 @@
 export const navLinks = [
-  { to: "/", text: "Home" },
+  { to: '/', text: 'Home' },
   {
-    to: "/portfolio",
-    text: "Portfolio",
+    to: '/portfolio',
+    text: 'Portfolio',
   },
   {
-    to: "/services",
-    text: "Services",
+    to: '/services',
+    text: 'Services',
   },
   {
-    to: "/about",
-    text: "About Us",
+    to: '/about-bnb',
+    text: 'About Us',
   },
   {
-    to: "/contact",
-    text: "Contact",
+    to: '/contact',
+    text: 'Contact',
   },
 ];
